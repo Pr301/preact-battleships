@@ -16,5 +16,6 @@ jobs:
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
       - name: Sync files to S3 bucket
         run: |
+          npm i -g vite
           npm run build
           aws s3 sync dist s3://battleships.pulsars.co --delete

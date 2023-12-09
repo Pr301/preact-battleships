@@ -27,7 +27,7 @@ function Cell({ row, col, status, onClick }: CellProps) {
         onClick={onClick}
         className="cell"
       >
-        {row}{col}
+        {col}{row}
       </Tag>
     </Grid.Item>
   );
